@@ -10,7 +10,7 @@ const CTA = () => {
             <Badge className="mb-6 bg-purple-900/60 text-purple-200 hover:bg-purple-900/80">Join Now</Badge>
             <h2 className="text-3xl md:text-5xl font-bold mb-6">
               Ready to Own a Piece of{" "}
-              <span className="bg-gradient-to-r from-pink-500 to-purple-500 text-transparent bg-clip-text">
+              <span className="bg-gradient-to-r bg-gradient-to-b from-black to-[#001E80] text-transparent bg-clip-text">
                 Digital History?
               </span>
             </h2>
@@ -21,11 +21,11 @@ const CTA = () => {
             <div className="flex flex-col sm:flex-row gap-4 justify-center">
               <Button
                 size="lg"
-                className="bg-gradient-to-r from-pink-600 to-purple-600 hover:from-pink-700 hover:to-purple-700"
+                className="text-white bg-gradient-to-r from-pink-600 to-purple-600 hover:from-pink-700 hover:to-purple-700"
               >
                 Connect Wallet
               </Button>
-              <Button size="lg" variant="outline" className="border-purple-500 text-purple-400 hover:bg-purple-950/50">
+              <Button size="lg" variant="outline" className="bg-white border-purple-500 text-purple-400 hover:bg-purple-950/50">
                 Join Discord
               </Button>
             </div>

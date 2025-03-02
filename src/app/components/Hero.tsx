@@ -15,17 +15,12 @@ import { useState, useEffect } from "react"
 const NftsData = [
   {
     picture: CaptainNft,
-    name: "The Grin Captain",
-    rarity: "100"
-  },
-  {
-    picture: Nft4,
-    name: "Stone",
+    name: "Captain Stone",
     rarity: "100"
   },
   {
     picture: Nft1,
-    name: "Sergio",
+    name: "Catalyst",
     rarity: "100"
   },
   {
@@ -35,11 +30,11 @@ const NftsData = [
   },
   {
     picture: Nft3,
-    name: "Catalyst",
+    name: "Ryda",
     rarity: "100"
   },
   {
-    picture: Nft1,
+    picture: Nft4,
     name: "Sergio",
     rarity: "100"
   },
@@ -74,10 +69,10 @@ const Hero = () => {
             <h1 className="text-4xl md:text-6xl font-bold leading-tight">
               <span className="block bg-gradient-to-b from-black to-[#001E80] text-transparent bg-clip-text">Join The Gang</span>
               <span className="bg-gradient-to-r from-blue-900 via-gray-500 to-black text-transparent bg-clip-text">
-                Discover Rare Collectibles
+                Acquire Rare Collectibles
               </span>
             </h1>
-            <p className="text-lg text-gray-300 max-w-xl">
+            <p className="text-lg text-white max-w-xl">
               Explore our exclusive collection of unique digital art pieces. Each NFT is a one-of-a-kind masterpiece
               which verifies you as a gang member.
             </p>
@@ -135,8 +130,9 @@ const Hero = () => {
                   <div className="absolute bottom-4 left-4 right-4 bg-black/60 backdrop-blur-md p-4 rounded-xl z-20">
                     <div className="flex justify-between items-center">
                       <div>
-                        <h3 className="font-bold text-white nft-name-font">
-                          {nft.name} #{String(index + 1).padStart(3, "0")}
+                        <h3 className="font-bold text-white text-2xl nft-name-font-2">
+                          {nft.name} 
+                          {/* #{String(index + 1).padStart(3, "0")} */}
                         </h3>
                         <p className="text-sm text-gray-300">Rarity: {nft.rarity}/2000</p>
                       </div>
