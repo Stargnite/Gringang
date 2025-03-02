@@ -7,9 +7,9 @@ const FAQ = () => {
         <div className="container mx-auto px-4">
           <div className="text-center mb-16">
             <Badge className="mb-4 bg-purple-900/60 text-purple-200 hover:bg-purple-900/80">FAQ</Badge>
-            <h2 className="text-3xl md:text-4xl font-bold mb-4">
+            <h2 className="text-3xl md:text-4xl font-bold mb-4 bg-gradient-to-b from-black to-[#001E80] text-transparent bg-clip-text">
               Frequently Asked{" "}
-              <span className="bg-gradient-to-r from-pink-500 to-purple-500 text-transparent bg-clip-text">
+              <span className="">
                 Questions
               </span>
             </h2>
@@ -41,7 +41,7 @@ const FAQ = () => {
                   How do I purchase an NFT from your collection?
                 </AccordionTrigger>
                 <AccordionContent className="px-6 pb-4 text-gray-300">
-                  To purchase an NFT, you&apos;ll need a digital wallet and cryptocurrency (typically Ethereum). Connect your
+                  To purchase an NFT, you&apos;ll need a digital wallet and cryptocurrency (typically Solana). Connect your
                   wallet to our platform, browse the collection, and click {"Buy Now"} or place a bid on the NFT you want
                   to acquire.
                 </AccordionContent>

@@ -2,15 +2,15 @@
 
 import { Badge } from "@/components/ui/badge"
 import { Button } from "@/components/ui/button"
-import { Flame } from "lucide-react"
 import Image from "next/image"
-import CaptainNft from "@/images/captain.JPG"
-import Nft1 from "@/images/nft1.JPG"
-import Nft2 from "@/images/nft2.JPG"
-import Nft3 from "@/images/nft3.JPG"
-import Nft4 from "@/images/nft4.JPG"
-import backImg from "../images/large-grin.JPG"
+import CaptainNft from "@/images/captain.jpg"
+import Nft1 from "@/images/nft1.jpg"
+import Nft2 from "@/images/nft2.jpg"
+import Nft3 from "@/images/nft3.jpg"
+import Nft4 from "@/images/nft4.jpg"
+// import backImg from "../images/large-grin.jpg"
 import { useState, useEffect } from "react"
+import Animation from "./animation"
 
 const NftsData = [
   {
@@ -25,17 +25,17 @@ const NftsData = [
   },
   {
     picture: Nft2,
-    name: "Rave",
+    name: "Cooper",
     rarity: "100"
   },
   {
     picture: Nft3,
-    name: "Ryda",
+    name: "Sergio",
     rarity: "100"
   },
   {
     picture: Nft4,
-    name: "Sergio",
+    name: "Ryda",
     rarity: "100"
   },
 ]
@@ -54,27 +54,28 @@ const Hero = () => {
   return (
     <section className="pt-24 pb-16 md:pt-32 md:pb-24 relative">
       <div className="absolute inset-0 bg-gradient-to-b from-purple-900/20 to-black/0 pointer-events-none" />
-      {/* <div className="absolute top-0 left-0 w-full h-full overflow-hidden">
-          <div className="absolute -top-40 -left-40 w-80 h-80 bg-purple-600 rounded-full filter blur-3xl opacity-20" />
-          <div className="absolute top-20 -right-20 w-80 h-80 bg-pink-600 rounded-full filter blur-3xl opacity-20" />
-          <div className="absolute bottom-0 left-1/3 w-80 h-80 bg-cyan-600 rounded-full filter blur-3xl opacity-20" />
-        </div> */}
 
       <div className="container mx-auto px-4 relative z-10">
         <div className="flex flex-col md:flex-row items-center gap-8 md:gap-16">
           <div className="flex-1 space-y-6">
+            <Animation duration={1} delay={.5} direction="x">
             <Badge className="bg-purple-900/60 text-purple-200 hover:bg-purple-900/80 px-3 py-1 text-sm">
               Launching Soon
             </Badge>
+            </Animation>
+            <Animation duration={1} delay={1} direction="x">
             <h1 className="text-4xl md:text-6xl font-bold leading-tight">
               <span className="block bg-gradient-to-b from-black to-[#001E80] text-transparent bg-clip-text">Join The Gang</span>
               <span className="bg-gradient-to-r from-blue-900 via-gray-500 to-black text-transparent bg-clip-text">
                 Acquire Rare Collectibles
               </span>
             </h1>
+            </Animation>
+            <Animation duration={1} delay={1.5} direction="x">
+              <div className="gap-y-6">
             <p className="text-lg text-white max-w-xl">
               Explore our exclusive collection of unique digital art pieces. Each NFT is a one-of-a-kind masterpiece
-              which verifies you as a gang member.
+              which verifies you as our gang member.
             </p>
             <div className="flex flex-wrap gap-4">
               <Button
@@ -86,11 +87,14 @@ const Hero = () => {
               <Button
                 size="lg"
                 variant="outline"
-                className="bg-white border-purple-500 text-purple-400 hover:bg-purple-950/50"
+                className="bg-white border-purple-500 text-purple-400 hover:bg-purple-950/50 transition-colors"
               >
                 Learn More
               </Button>
             </div>
+
+              </div>
+            </Animation>
             <div className="flex items-center gap-6 pt-4">
               <div className="flex flex-col">
                 <span className="text-2xl font-bold">5K+</span>
@@ -142,12 +146,6 @@ const Hero = () => {
               ))}
             </div>
           </div>
-
-
-
-
-
-
         </div>
       </div>
     </section>

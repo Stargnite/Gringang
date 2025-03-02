@@ -1,7 +1,8 @@
+"use client"
 // import Image from "next/image";
 import Navbar from "./components/Navbar";
 import Hero from "./components/Hero";
-import Collection from "./components/Collection";
+// import Collection from "./components/Collection";
 import About from "./components/About";
 import Roadmap from "./components/Roadmap";
 import FAQ from "./components/FAQ";
@@ -13,8 +14,8 @@ export default function Home() {
     <div className="font-[family-name:var(--font-geist-sans)] bg-[#f27980]">
       <Navbar />
       <Hero />
-      <Collection />
       <About />
+      {/* <Collection /> */}
       <Roadmap />                                                     
       <FAQ />
       <CTA />

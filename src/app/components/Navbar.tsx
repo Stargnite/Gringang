@@ -2,7 +2,7 @@
 
 import Link from "next/link";
 import { Button } from "@/components/ui/button";
-import logo from "@/images/logo.JPG"
+import logo from "@/images/logo.jpg"
 import Image from "next/image";
 import { motion } from "framer-motion"
 
@@ -12,26 +12,26 @@ export default function Navbar() {
       <div className="container mx-auto px-4 py-4 flex items-center justify-between">
         <div className="flex items-center gap-2">
           <Image src={logo} alt="logo" className="h-6 w-6" />
-          <span
-            // animate={{
-            //   backgroundPositionX: "100%",
-            // }}
-            // transition={{
-            //   duration: 1,
-            //   repeat: Infinity,
-            //   ease: "linear",
-            //   repeatType: "loop",
-            // }}
+          <motion.span
+            animate={{
+              backgroundPositionX: "100%",
+            }}
+            transition={{
+              duration: 2,
+              repeat: Infinity,
+              ease: "linear",
+              repeatType: "loop",
+            }}
             className="
           bg-[linear-gradient(to_right,#DD7DDF,#E1CD86,#BBCB92,#71C2EF,#3BFFFF,#DD7DDF,#E1CD86,#BBCB92,#71C2EF,#3BFFFF,#DD7DDF)] [background-size:200%]
           font-bold text-xl text-transparent bg-clip-text">
             GRINGANG
-          </span>
+          </motion.span>
         </div>
         <nav className="hidden md:flex items-center gap-6">
-          <Link href="#collection" className="hover:text-red-400 transition-colors">
+          {/* <Link href="#collection" className="hover:text-red-400 transition-colors">
             Collection
-          </Link>
+          </Link> */}
           <Link href="#about" className="hover:text-red-400 transition-colors">
             About
           </Link>

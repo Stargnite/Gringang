@@ -1,6 +1,6 @@
 import Link from "next/link";
-import { Sparkles, Twitter, Instagram, Disc } from "lucide-react";
-import logo from "@/images/logo.JPG"
+import { Twitter, Disc } from "lucide-react";
+import logo from "@/images/logo.jpg"
 import Image from "next/image";
 
 const Footer = () => {
@@ -31,18 +31,18 @@ const Footer = () => {
               Discover, collect, and sell extraordinary NFTs on the world&apos;s first and largest marketplace.
             </p>
             <div className="flex gap-4">
-              <Link href="#" className="text-white hover:text-purple-400 transition-colors">
+              <Link href="https://x.com/GrinGang_" className="text-white hover:text-purple-400 transition-colors">
                 <Twitter className="h-5 w-5" />
                 <span className="sr-only">Twitter</span>
               </Link>
-              <Link href="#" className="text-white hover:text-purple-400 transition-colors">
-                <Instagram className="h-5 w-5" />
-                <span className="sr-only">Instagram</span>
-              </Link>
-              <Link href="#" className="text-white hover:text-purple-400 transition-colors">
+              <Link href="https://discord.gg/gringang" className="text-white hover:text-purple-400 transition-colors">
                 <Disc className="h-5 w-5" />
                 <span className="sr-only">Discord</span>
               </Link>
+              {/* <Link href="#" className="text-white hover:text-purple-400 transition-colors">
+                <Instagram className="h-5 w-5" />
+                <span className="sr-only">Instagram</span>
+              </Link> */}
             </div>
           </div>
 
@@ -126,7 +126,7 @@ const Footer = () => {
         </div>
 
         <div className="border-t border-purple-900/40 mt-12 pt-6 flex flex-col md:flex-row justify-between items-center">
-          <p className="text-white text-sm">&copy; {new Date().getFullYear()} COSMIC NFTs. All rights reserved.</p>
+          <p className="text-white text-sm">&copy; {new Date().getFullYear()} GRINGANG NFTs. All rights reserved.</p>
           <p className="text-white text-sm mt-2 md:mt-0">Powered by Blockchain Technology</p>
         </div>
       </div>
