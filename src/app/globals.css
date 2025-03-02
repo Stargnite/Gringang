@@ -71,7 +71,7 @@ html, body {
 }
 
 .bg-img {
-  @apply md:bg-[url('./../images/large-grin.JPG')] bg-cover bg-center
+  @apply md:bg-[url('./../images/large-grin.png')] bg-cover bg-center
 }
 
 .nft-name-font-2 {
