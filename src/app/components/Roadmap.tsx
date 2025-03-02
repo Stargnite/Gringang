@@ -4,7 +4,7 @@ import Animation from "./animation"
 
 const Roadmap = () => {
   return (
-    <section id="roadmap" className="py-16 md:py-24 relative">
+    <section id="roadmap" className="py-16 md:py-24 relative overflow-hidden">
       <div className="container mx-auto px-4">
         <div className="text-center mb-16">
           <Badge className="mb-4 bg-purple-900/60 text-purple-200 hover:bg-purple-900/80">Roadmap</Badge>

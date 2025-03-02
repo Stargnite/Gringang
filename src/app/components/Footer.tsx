@@ -1,7 +1,10 @@
+"use client"
+
 import Link from "next/link";
 import { Twitter, Disc } from "lucide-react";
 import logo from "@/images/logo.jpg"
 import Image from "next/image";
+import { motion } from "framer-motion"
 
 const Footer = () => {
   return (
@@ -11,21 +14,21 @@ const Footer = () => {
           <div className="space-y-4">
             <div className="flex items-center gap-2">
               <Image src={logo} alt="logo" className="h-6 w-6" />
-              <span
-                // animate={{
-                //   backgroundPositionX: "100%",
-                // }}
-                // transition={{
-                //   duration: 1,
-                //   repeat: Infinity,
-                //   ease: "linear",
-                //   repeatType: "loop",
-                // }}
+              <motion.span
+                animate={{
+                  backgroundPositionX: "100%",
+                }}
+                transition={{
+                  duration: 1,
+                  repeat: Infinity,
+                  ease: "linear",
+                  repeatType: "loop",
+                }}
                 className="
           bg-[linear-gradient(to_right,#DD7DDF,#E1CD86,#BBCB92,#71C2EF,#3BFFFF,#DD7DDF,#E1CD86,#BBCB92,#71C2EF,#3BFFFF,#DD7DDF)] [background-size:200%]
           font-bold text-xl text-transparent bg-clip-text">
                 GRINGANG
-              </span>
+              </motion.span>
             </div>
             <p className="text-white text-sm">
               Discover, collect, and sell extraordinary NFTs on the world&apos;s first and largest marketplace.

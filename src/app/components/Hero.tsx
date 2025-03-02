@@ -12,7 +12,7 @@ import Nft4 from "@/images/nft4.jpg"
 import { useState, useEffect } from "react"
 import Animation from "./animation"
 
-const NftsData = [
+export const NftsData = [
   {
     picture: CaptainNft,
     name: "Captain Stone",
@@ -20,7 +20,7 @@ const NftsData = [
   },
   {
     picture: Nft1,
-    name: "Catalyst",
+    name: "Hudson",
     rarity: "100"
   },
   {
@@ -64,7 +64,7 @@ const Hero = () => {
               </Badge>
             </Animation>
             <Animation duration={1} delay={1} direction="x" reverse={true}>
-              <h1 className="text-4xl md:text-6xl font-bold leading-tight">
+              <h1 className="text-4xl lg:text-6xl font-bold leading-tight">
                 <span className="block bg-gradient-to-b from-black to-[#001E80] text-transparent bg-clip-text">Join The Gang</span>
                 <span className="bg-gradient-to-r from-blue-900 via-gray-500 to-black text-transparent bg-clip-text">
                   Acquire Rare Collectibles
@@ -113,38 +113,38 @@ const Hero = () => {
           </div>
 
           <div className="flex-1 relative">
-          <Animation duration={1} delay={1.5} direction="x">
-            <div className="relative w-full aspect-square max-w-md mx-auto overflow-hidden">
-              <div className="absolute inset-0 bg-gradient-to-br from-pink-600 to-purple-600 rounded-2xl blur-xl opacity-30 animate-pulse" />
-              <div className="absolute inset-0 bg-black/40 backdrop-blur-sm rounded-2xl" />
-              {NftsData.map((nft, index) => (
-                <div
-                  key={index}
-                  className={`absolute inset-0 transition-transform duration-500 ease-in-out ${index === currentNft ? "translate-x-0" : "translate-x-full"
-                    }`}
-                  aria-hidden={index !== currentNft}
-                >
-                  <Image
-                    src={nft.picture || "/placeholder.svg"}
-                    alt={nft.name}
-                    width={500}
-                    height={500}
-                    className="relative z-10 rounded-2xl p-2 w-full h-full object-cover"
-                  />
-                  <div className="absolute bottom-4 left-4 right-4 bg-black/60 backdrop-blur-md p-4 rounded-xl z-20">
-                    <div className="flex justify-between items-center">
-                      <div>
-                        <h3 className="font-bold text-white text-2xl nft-name-font-2">
-                          {nft.name}
-                          {/* #{String(index + 1).padStart(3, "0")} */}
-                        </h3>
-                        <p className="text-sm text-gray-300">Rarity: {nft.rarity}/2000</p>
+            <Animation duration={1} delay={1.5} direction="x">
+              <div className="relative w-full aspect-square max-w-md mx-auto overflow-hidden">
+                <div className="absolute inset-0 bg-gradient-to-br from-pink-600 to-purple-600 rounded-2xl blur-xl opacity-30 animate-pulse" />
+                <div className="absolute inset-0 bg-black/40 backdrop-blur-sm rounded-2xl" />
+                {NftsData.map((nft, index) => (
+                  <div
+                    key={index}
+                    className={`absolute inset-0 transition-transform duration-500 ease-in-out ${index === currentNft ? "translate-x-0" : "translate-x-full"
+                      }`}
+                    aria-hidden={index !== currentNft}
+                  >
+                    <Image
+                      src={nft.picture || "/placeholder.svg"}
+                      alt={nft.name}
+                      width={500}
+                      height={500}
+                      className="relative z-10 rounded-2xl p-2 w-full h-full object-cover"
+                    />
+                    <div className="absolute bottom-4 left-4 right-4 bg-black/60 backdrop-blur-md p-4 rounded-xl z-20">
+                      <div className="flex justify-between items-center">
+                        <div>
+                          <h3 className="font-bold text-white text-2xl nft-name-font-2">
+                            {nft.name}
+                            {/* #{String(index + 1).padStart(3, "0")} */}
+                          </h3>
+                          <p className="text-sm text-gray-300">Rarity: {nft.rarity}/2000</p>
+                        </div>
                       </div>
                     </div>
                   </div>
-                </div>
-              ))}
-            </div>
+                ))}
+              </div>
             </ Animation>
           </div>
         </div>
