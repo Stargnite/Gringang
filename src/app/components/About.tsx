@@ -25,7 +25,7 @@ const About = () => {
       <div className="container mx-auto px-4 relative z-10">
         <div className="flex flex-col md:flex-row items-center gap-12">
           <div className="flex-1 hidden md:flex">
-            <Animation duration={1} delay={1.5} direction="y">
+            <Animation duration={1} delay={.7} direction="y">
               <div className="relative">
                 <div className="absolute -inset-4 bg-gradient-to-r from-pink-600 to-[#f27980] rounded-2xl blur-xl opacity-20" />
                 <div className="relative aspect-square max-w-md rounded-2xl overflow-hidden border border-purple-500/30">
@@ -42,7 +42,7 @@ const About = () => {
           </div>
 
           <div className="flex-1 md:hidden overflow-hidden">
-            <Animation duration={1} delay={1.5} direction="x">
+            <Animation duration={1} delay={.4} direction="x">
               <div className="relative w-[300px] h-[300px] sm:w-[400px] sm:h-[400px] mx-auto overflow-hidden">
                 <div className="absolute inset-0 bg-black/40 backdrop-blur-sm rounded-2xl" />
                 {NftsData.map((nft, index) => (
@@ -77,7 +77,7 @@ const About = () => {
 
 
           <div className="flex-1">
-            <Animation duration={1} delay={1.5} direction="y">
+            <Animation duration={1} delay={.8} direction="y">
               <div className="space-y-6">
                 <Badge className="bg-purple-900/60 text-purple-200 hover:bg-purple-900/80">About Us</Badge>
                 <h2 className="text-3xl md:text-4xl font-bold bg-gradient-to-r from-blue-400 via-35% to-white text-transparent bg-clip-text">
