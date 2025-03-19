@@ -96,17 +96,17 @@ const Hero = () => {
               </div>
               <div className="flex items-center gap-6 pt-4">
                 <div className="flex flex-col">
-                  <span className="text-2xl font-bold">5K+</span>
+                  <span className="text-2xl font-bold">2K+</span>
                   <span className="text-sm text-white">Artworks</span>
                 </div>
                 <div className="h-10 w-px bg-purple-800/50" />
                 <div className="flex flex-col">
-                  <span className="text-2xl font-bold">1K+</span>
-                  <span className="text-sm text-white">Artists</span>
+                  <span className="text-2xl font-bold">1</span>
+                  <span className="text-sm text-white">Artist</span>
                 </div>
                 <div className="h-10 w-px bg-purple-800/50" />
                 <div className="flex flex-col">
-                  <span className="text-2xl font-bold">6K+</span>
+                  <span className="text-2xl font-bold">7K+</span>
                   <span className="text-sm text-white">Community</span>
                 </div>
               </div>

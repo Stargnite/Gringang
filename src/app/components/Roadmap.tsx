@@ -25,8 +25,8 @@ const Roadmap = () => {
             <RoadmapItem
               phase="Phase 1"
               title="Collection Launch"
-              description="Initial release of 5,000 unique NFTs with special benefits for early adopters."
-              date="Q2 2025"
+              description="Initial release of 2,222 unique NFTs with special benefits for early adopters."
+              date="March 20, 2025"
               isLeft={true}
             />
           </Animation>
