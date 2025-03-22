@@ -43,7 +43,7 @@ const Roadmap = () => {
             <RoadmapItem
               phase="Phase 3"
               title="Marketplace Integration"
-              description="Launch of our dedicated marketplace for trading and showcasing NFTs."
+              description="Vibe with art and get our holders locked in for upcoming launch on sol"
               date="Q4 2025"
               isLeft={true}
             />

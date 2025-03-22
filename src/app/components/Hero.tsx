@@ -61,7 +61,7 @@ const Hero = () => {
           <div className="flex-1 space-y-6">
             <Animation duration={1} delay={.5} direction="x" reverse={true}>
               <Badge className="bg-purple-900/60 text-purple-200 hover:bg-purple-900/80 px-3 py-1 text-sm">
-                Launching Soon
+                Welcome to GRIN GANG
               </Badge>
             </Animation>
             <Animation duration={1} delay={1} direction="x" reverse={true}>
