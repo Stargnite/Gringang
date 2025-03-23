@@ -5,8 +5,13 @@ import Link from "next/link";
 import logo from "@/images/logo.png"
 import Image from "next/image";
 import { motion } from "framer-motion"
+import { useState } from "react";
+import { Menu, X } from "lucide-react";
 
 export default function Navbar() {
+  const [isOpen, setIsOpen] = useState(false);
+
+
   return (
     <header className="border-b border-purple-900/40 backdrop-blur-md fixed top-0 w-full z-50" >
       <div className="container mx-auto px-4 py-4 flex items-center justify-between">
@@ -28,10 +33,33 @@ export default function Navbar() {
             GRINGANG
           </motion.span>
         </div>
+
+        <button
+          className="md:hidden p-2 text-white"
+          onClick={() => setIsOpen(!isOpen)}
+        >
+          {isOpen ? <X size={24} /> : <Menu size={24} />}
+        </button>
+
+        <nav
+          className={`py-5 flex flex-col space-y-3 p-5 md:hidden md:space-x-6 absolute md:static left-0 w-full md:w-auto bg-[#DD7DDF] md:bg-transparent transition-all duration-300 ease-in-out ${isOpen ? "top-16" : "top-[-200px]"}`}
+        // className="hidden md:flex items-center gap-6"
+        >
+
+          <Link href="#about" className="hover:text-red-400 transition-colors" onClick={() => setIsOpen(false)}>
+            About
+          </Link>
+          <Link href="#roadmap" className="hover:text-red-400 transition-colors" onClick={() => setIsOpen(false)}>
+            Roadmap
+          </Link>
+          <Link href="#faq" className="hover:text-red-400 transition-colors" onClick={() => setIsOpen(false)}>
+            FAQ
+          </Link>
+        </nav>
+
+
         <nav className="hidden md:flex items-center gap-6">
-          {/* <Link href="#collection" className="hover:text-red-400 transition-colors">
-            Collection
-          </Link> */}
+
           <Link href="#about" className="hover:text-red-400 transition-colors">
             About
           </Link>
