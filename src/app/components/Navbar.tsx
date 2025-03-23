@@ -42,9 +42,9 @@ export default function Navbar() {
             FAQ
           </Link>
         </nav>
-        <Button className="text-white bg-gradient-to-r from-pink-600 to-purple-600 hover:from-pink-700 hover:to-purple-700">
+        {/* <Button className="text-white bg-gradient-to-r from-pink-600 to-purple-600 hover:from-pink-700 hover:to-purple-700">
           Connect Wallet
-        </Button>
+        </Button> */}
       </div>
     </header>
   )
